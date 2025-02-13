@@ -1,41 +1,12 @@
-##**Step-by-step command history for installing AWS CLI, configuring it, and listing EC2 instances and S3 Buckets.**
-##### AWS CLI Installation and Basic Commands 🚀  
+AWS CLI Demo 🚀
+Project Summary
+This project demonstrates the installation and usage of AWS CLI on a Linux system. It includes:
 
-1️⃣*Update and Check Versions**
-
-sudo apt-get update
-
-aws --version
-
-python3 --version
-
-2️⃣ **Download & Install AWS CLI**
-
-sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-
-sudo apt install unzip
-
-unzip awscliv2.zip
-
-sudo ./aws/install
-
-3️⃣ **Configure AWS CLI**
-
-aws configure
-
-🔹 **This will prompt for:**
-
-Access Key
-
-Secret Key
-
-Default Region
-
-Output Format
-
-
-4️⃣ **Basic AWS CLI Commands**
-
-aws s3 ls                 # List S3 Buckets
-
-aws ec2 describe-instances --query "Reservations[].Instances[].InstanceId" --output text                     # List EC2 Instances
+Installing AWS CLI
+Configuring AWS credentials
+Running basic AWS commands to interact with services like EC2 and S3
+Steps Covered 🛠️
+1️⃣ Install and verify AWS CLI
+2️⃣ Configure AWS CLI with access keys
+3️⃣ List S3 buckets
+4️⃣ Retrieve EC2 instance details
